@@ -1,9 +1,9 @@
 var $ = require('jbone');
 var ajax = require('./ajax');
 
-$.fn.post = ajax.post;
-$.fn.get = ajax.get;
-$.fn.put = ajax.put;
-$.fn.delete = ajax.delete;
+$.post = ajax.post;
+$.get = ajax.get;
+$.put = ajax.put;
+$.delete = ajax.delete;
 
 module.exports = $;
