@@ -1,0 +1,18 @@
+# Build
+lib
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Dependency directory
+node_modules
+
+# Temporal files
+.DS_Store

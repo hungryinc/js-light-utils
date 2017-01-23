@@ -1,0 +1,20 @@
+{
+  "name": "@erchaves/sprinkles",
+  "version": "1.0.0",
+  "description": "A little sugar for your vanilla js -- simple DOM and AJAX in just a few K. Uses jbone.",
+  "author": "Eric Chaves <erchaves@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erchaves/sprinkles.git"
+  },
+  "license": "MIT",
+  "scripts": {
+  },
+  "bugs": {
+    "url": "https://github.com/erchaves/sprinkles/issues"
+  },
+  "homepage": "https://github.com/erchaves/sprinkles#readme",
+  "dependencies": {
+    "jbone": "^1.2.0"
+  }
+}
