@@ -1,6 +1,6 @@
 {
   "name": "@erchaves/sprinkles",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A little sugar for your vanilla js -- simple DOM and AJAX in just a few K. Uses jbone.",
   "author": "Eric Chaves <erchaves@gmail.com>",
   "repository": {
