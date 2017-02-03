@@ -1,11 +1,11 @@
-const send = (url, method, data) => {
-  const xhr = new window.XMLHttpRequest();
-  const _e = encodeURIComponent;
-  const isFormData = data instanceof window.FormData;
-  let dataPairs = [];
+var send = function send(url, method, data) {
+  var xhr = new window.XMLHttpRequest();
+  var _e = encodeURIComponent;
+  var isFormData = data instanceof window.FormData;
+  var dataPairs = [];
 
   if (typeof data === 'object' && !isFormData) {
-    for (let key in data) {
+    for (var key in data) {
       if ({}.hasOwnProperty.call(data, key)) {
         dataPairs.push(_e(key) + '=' + _e(data[key]));
       }
@@ -13,8 +13,8 @@ const send = (url, method, data) => {
     data = dataPairs.join('&').replace(/%20/g, '+');
   }
 
-  const promise = new Promise((resolve, reject) => {
-    xhr.onreadystatechange = () => {
+  var promise = new Promise(function (resolve, reject) {
+    xhr.onreadystatechange = function () {
       if (xhr.readyState === 4) {
         if (xhr.status === 200) {
           resolve(JSON.parse(xhr.responseText));
@@ -37,8 +37,16 @@ const send = (url, method, data) => {
 };
 
 module.exports = {
-  post: (url, data) => send(url, 'POST', data),
-  get: (url, data) => send(url, 'GET', data),
-  put: (url, data) => send(url, 'PUT', data),
-  delete: (url, data) => send(url, 'DELETE', data),
+  post: function post(url, data) {
+    return send(url, 'POST', data);
+  },
+  get: function get(url, data) {
+    return send(url, 'GET', data);
+  },
+  put: function put(url, data) {
+    return send(url, 'PUT', data);
+  },
+  delete: function _delete(url, data) {
+    return send(url, 'DELETE', data);
+  }
 };
