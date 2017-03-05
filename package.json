@@ -8,13 +8,32 @@
     "url": "git+https://github.com/erchaves/sprinkles.git"
   },
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "build-tests": "browserify ./tests/test.js > ./tests/main.js"
+  },
   "bugs": {
     "url": "https://github.com/erchaves/sprinkles/issues"
   },
   "homepage": "https://github.com/erchaves/sprinkles#readme",
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "es2015"
+          ]
+        }
+      ]
+    ]
+  },
   "dependencies": {
     "es6-promise": "^4.0.5",
     "jbone": "^1.2.0"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.22.0",
+    "babelify": "^7.3.0",
+    "browserify": "^14.1.0"
   }
 }

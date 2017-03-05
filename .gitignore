@@ -16,3 +16,5 @@ node_modules
 
 # Temporal files
 .DS_Store
+
+tests/main.js
