@@ -1,3 +1,5 @@
+require('es6-promise').polyfill();
+
 var send = function send(url, method, data) {
   var xhr = new window.XMLHttpRequest();
   var _e = encodeURIComponent;

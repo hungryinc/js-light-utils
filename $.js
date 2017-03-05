@@ -1,11 +1,17 @@
-require('es6-promise').polyfill();
+import pubsub from './pubsub';
 
-var $ = require('jbone');
-var ajax = require('./ajax');
+const $ = require('jbone');
+const ajax = require('./ajax');
 
+// add ajax functions
 $.post = ajax.post;
 $.get = ajax.get;
 $.put = ajax.put;
 $.delete = ajax.delete;
+
+// add a global scope pubsub util
+$.on = pubsub.on;
+$.off = pubsub.off;
+$.trigger = pubsub.trigger;
 
 module.exports = $;
