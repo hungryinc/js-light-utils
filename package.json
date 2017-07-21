@@ -1,20 +1,20 @@
 {
-  "name": "@erchaves/sprinkles",
-  "version": "1.0.6",
-  "description": "A little sugar for your vanilla js -- 8kb of js utils. Jbone (a lite jquery alternative) + AJAX + pubsub.",
-  "author": "Eric Chaves <erchaves@gmail.com>",
+  "name": "@hungryinc/js-light-utils",
+  "version": "1.0.8",
+  "description": "A small collection of js utils in a jquery-like $ syntax. But in only 8kb. It is Jbone (a lite jquery alternative) + AJAX + pubsub.",
+  "author": "Eric Chaves <eric@hungryinc.com>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/erchaves/sprinkles.git"
+    "url": "git+https://github.com/hungryinc/js-light-utils.git"
   },
   "license": "MIT",
   "scripts": {
     "build-tests": "browserify ./tests/test.js > ./tests/main.js"
   },
   "bugs": {
-    "url": "https://github.com/erchaves/sprinkles/issues"
+    "url": "https://github.com/hungryinc/js-light-utils/issues"
   },
-  "homepage": "https://github.com/erchaves/sprinkles#readme",
+  "homepage": "https://github.com/hungryinc/js-light-utils#readme",
   "browserify": {
     "transform": [
       [

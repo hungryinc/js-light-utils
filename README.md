@@ -1,6 +1,6 @@
-# Sprinkles: A little sugar for your vanilla js.
+# JS Light Utils
 
-Sprinkles is a tiny collection of js utils to make it painless to ditch your framework.
+JS Light Utils is a small collection of js utils wrapped up into a familiar jquery like $ object. But with a much smaller footprint.
 
 - DOM: Powered by [jbone](https://www.npmjs.com/package/jbone) -- a tiny jquery replacment.
 - AJAX: A [promise-based](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)  implementation with jquery syntax. Includes the es6-promise polyfill.
@@ -10,11 +10,11 @@ Sprinkles is a tiny collection of js utils to make it painless to ditch your fra
 
 Install with npm
 ```
-npm install @erchaves/sprinkles
+npm install @hungryinc/js-light-utils
 ```
 Use in your project
 ```
-var $ = require('@erchaves/sprinkles');
+var $ = require('@hungryinc/js-light-utils');
 ```
 
 ### Dom Util
