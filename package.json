@@ -1,6 +1,6 @@
 {
   "name": "@hungryinc/js-light-utils",
-  "version": "1.0.8",
+  "version": "1.1.0",
   "description": "A small collection of js utils in a jquery-like $ syntax. But in only 8kb. It is Jbone (a lite jquery alternative) + AJAX + pubsub.",
   "author": "Eric Chaves <eric@hungryinc.com>",
   "repository": {
