@@ -18,8 +18,8 @@ var send = function send(url, method, data) {
   var promise = new Promise(function (resolve, reject) {
     xhr.onreadystatechange = function () {
       if (xhr.readyState === 4) {
-        if (xhr.status === 200) {
-          resolve(JSON.parse(xhr.responseText));
+        if (xhr.status === 200 || xhr.status === 204) {
+          resolve(xhr.status === 204 ? undefined : JSON.parse(xhr.responseText));
         } else {
           reject(xhr.responseText);
         }
